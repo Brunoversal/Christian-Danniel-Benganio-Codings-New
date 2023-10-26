@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Codystar&family=Faster+One&family=Turret+Road:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Codystar&display=swap');
+
+
+.Intro {
+    color: white; 
+    text-align: center;
+}
+
+.navlogo{
+    padding: 10px 10px;
+    background-color: black;
+    text-align: left;
+    justify-content: space-around;
+    position: absolute;
+    margin-right: 30px;
+}
+
+.nav {
+    font-family: 'Turret Road', sans-serif;
+    padding: 10px 10px;
+    background-color: black;
+    text-align: right;
+    justify-content: space-around;
+    height: 100px;
+    line-height: 5%;
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+
+.nav ul a{
+    font-size: 40px;
+    color: white;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.picture{
+    color: rgb(12, 49, 76);
+    border-radius: 50%;
+    border: 5px solid;
+}
+
+.split{
+    padding: 150px 290px;
+    display: flex;
+    justify-content: space-around;
+}
+.Intro{
+    margin-top: 50px;
+}
+
+ul a{
+    transition: .5s;
+    position: relative;
+    border-bottom: 2px solid rgb(3, 54, 93);    
+    border-radius: 25px;
+    transform: scale(1) translateY(50px);
+}
+
+ul a:hover {
+ color: rgb(5, 49, 79);
+}
+
+.Intro{
+    font-family: 'Codystar', sans-serif;
+}
+
+.contact{
+    text-align: center;
+    color: azure;
+}
+.contactcontent{
+    display: flex;
+    justify-content: space-around;
+    padding: 4.2%;
+    padding-right: 6.5%;
+}
+.contacting {
+    font-family: 'Codystar', sans-serif;
+}
+
+.paragraph{
+    color: white; 
+    text-align: center;
+    padding: 50px 50px;
+}
+
+.paragraph {
+    font-family: 'Codystar', sans-serif;
+}
+
+body
+{
+    background-image: url(spirited-away-30497-1920x1080.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    padding: 20px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.box{
+    padding: 20px;
+    height: 50%;
+    width: 50%;
+    background-color: rgba(18, 128, 239, 0.042);
+    backdrop-filter: blur(64px);
+    border: 2px solid rgba(37, 99, 157, 0.041);;
+    
+
+}
+.textview{
+    font-size: 2em;
+    width: 100%;
+}
+.cal-buttons{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: stretch;
+    gap: 2px;
+    margin-top: 10px;
+}
+.cal-buttons button{
+    width: 100%;
+    padding: 20px 2vw;
+}
+.cal-buttons .btnequals{
+    grid-row: 4/6;
+    grid-column-start: 4;
+}
+.cal-buttons .btnzero{
+    grid-column: span 2;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Codystar', sans-serif;
+    color: white;
+}

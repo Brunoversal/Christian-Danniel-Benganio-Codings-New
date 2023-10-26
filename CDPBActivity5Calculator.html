@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cssmain.css">
+    <link href="https://fonts.googleapis.com/css2?family=Codystar&display=swap" rel="stylesheet">
+    <style>
+            
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <div class="navlogo">
+            <img src="ChaosInsurgency.png" height="90" width="100" class="img">
+        </div>
+        
+                <ul><a href="CDPBHome.html">Home</a>
+                    <a href="CDPBActivity5about.html">About</a>
+                    <a href="CDPBActivity5Contact.html">Contacts</a>
+                    <a href="CDPBActivity5Calculator.html">Calculator</a>
+                        </ul>
+                        </div>
+
+    <header>
+        <h1>Calculator</h1>
+    </header>
+
+    <div class="container">
+        <div class="box">
+            
+            <form action="" name="brunocal">
+                <input type="text"  class="textview" name="textview">
+            </form>
+           
+
+            <div class="cal-buttons">
+                <button type="button" onclick="brunocal.textview.value=''" value="C">C</button>
+                <button type="button" onclick="backspace()" value="B">B</button>
+                <button type="button" onclick="insert('/')" value="/">/</button>
+                <button type="button" onclick="insert('*')" value="*">*</button>
+        
+                <button type="button" onclick="insert('7')" value="7">7</button>
+                <button type="button" onclick="insert('8')" value="8">8</button>
+                <button type="button" onclick="insert('9')" value="9">9</button>
+                <button type="button" onclick="insert('-')" value="-">-</button>
+
+                <button type="button" onclick="insert('4')" value="4">4</button>
+                <button type="button" onclick="insert('5')" value="5">5</button>
+                <button type="button" onclick="insert('6')" value="6">6</button>
+                <button type="button" onclick="insert('+')" value="+">+</button>
+
+                <button type="button" onclick="insert('1')" value="1">1</button>
+                <button type="button" onclick="insert('2')" value="2">2</button>
+                <button type="button" onclick="insert('3')" value="3">3</button>
+
+                <button type="button" class="btnequals" onclick="equal()" value="=">=</button>
+                <button type="button" class="btnzero" onclick="insert('0')" value="0">0</button>
+                <button type="button" onclick="insert('.')" value=".">.</button>
+
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    function insert(num){
+        const inputvalue=document.brunocal.textview.value;
+
+        document.brunocal.textview.value = inputvalue + num;
+
+    }
+    function backspace(){
+
+        let total=document.brunocal.textview.value;
+
+        total + total.slice(0, -1);
+
+        document.brunocal.textview.value = total;
+    }
+    function equal(){
+
+        let total=document.brunocal.textview.value;
+
+        if(total){
+            total = eval(total);
+            document.brunocal.textview.value = total;
+        
+        }else{
+            document.brunocal.textview.value = "ERROR"
+        }
+        
+    }
+</script>
